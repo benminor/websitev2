@@ -1,4 +1,5 @@
 {
+  "homepage": "https://benminor.github.io/websitev2",
   "name": "ben-website",
   "version": "0.1.0",
   "private": true,
@@ -24,6 +25,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -51,7 +54,8 @@
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/plugin-syntax-class-properties": "^7.12.13",
     "@babel/preset-env": "^7.13.10",
-    "@babel/preset-react": "^7.12.13"
+    "@babel/preset-react": "^7.12.13",
+    "gh-pages": "^3.1.0"
   },
   "babel": {
     "presets": [
