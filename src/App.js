@@ -5,13 +5,19 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Popover from '@material-ui/core/Popover';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCompressAlt, faHome, faMailBulk, faMobileAlt, faShare, faVoicemail } from "@fortawesome/free-solid-svg-icons";
+import { faAirbnb, faAppStore, fab, faGithub, faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+
 const useStyles = makeStyles({
   root: {
     minWidth: 300,
     maxWidth: 300,
     maxHeight: 150,
     minHeight: 150,
-    margin: 15,
+    marginBottom: 15,
+    marginRight: 15,
   },
 
   secondary :{
@@ -27,7 +33,7 @@ const useStyles = makeStyles({
     maxWidth: 130,
     maxHeight: 60,
     minHeight: 60,
-    margin: 15,
+    marginBottom: 15,
   },
 
   secondary2 :{
@@ -37,7 +43,7 @@ const useStyles = makeStyles({
     minHeight: 60,
     margin: 0,
   }
-  
+
 });
 
 const cardStyle = {
@@ -100,15 +106,22 @@ export default function ImgMediaCard() {
   const id = open ? 'simple-popover' : undefined;
 
   return (
-    
+
     <div class = "all">
-      
-      <div class = "main-div">
+        <div class = "main-div">
+
+
         <div class="typewriter">
           <h1>Hi, I'm Ben.</h1>
         </div>
         <h2>I'm a 3rd year Computing student at Queen's University.</h2>
-        <div class="resume-div"> 
+        <a class = "fa-a"><FontAwesomeIcon icon={faGithub} size='lg'/></a>
+        <a class = "fa-a"><FontAwesomeIcon icon={faLinkedin} size='lg'/></a>
+        <a class = "fa-a"><FontAwesomeIcon icon={faAppStore} size='lg'/></a>
+
+
+        <br></br><br></br>
+        <div class="resume-div">
 
         <Card className={classes.root2} style={cardStyle2}>
             <CardActionArea className={classes.secondary2} >
@@ -118,9 +131,8 @@ export default function ImgMediaCard() {
             </CardActionArea>
           </Card>
         </div>
-    
         <br></br>
-       
+
         <div class = "card-div">
 
           <Card className={classes.root} style={cardStyle}>
@@ -151,7 +163,7 @@ export default function ImgMediaCard() {
         </div>
       </div>
       <div>
- 
+
       <Popover
         id={id}
         style={popoverStyle}
@@ -178,7 +190,7 @@ export default function ImgMediaCard() {
                 <br></br>
                 - Weekly meetings with a full product team to iterate through developmental and design ideas.
               </p>
-                
+
 
           <br></br>
           <h4>Finance Director @ Queen's Pre-Dental Society</h4>
@@ -189,7 +201,7 @@ export default function ImgMediaCard() {
                 - Helped secure funding from notable DAT resource company, DAT Crusher
                 <br></br>
                 - Developed and am solely in charge of the club website
-                
+
               </p>
 
           <br></br>
@@ -232,8 +244,8 @@ export default function ImgMediaCard() {
                 <br></br>
                 - Worked efficiently and cooperatively in 6 person team to meet strict contractual deadlines
               </p>
-       
-       
+
+
           </div>
       </Popover>
 
@@ -256,7 +268,7 @@ export default function ImgMediaCard() {
           <div class = "popover-class">
           <h2>My Education</h2>
           <h4>Bachelor of Computing Honours (BCmpH) @ Queen's University</h4>
-       
+
           </div>
       </Popover>
 
@@ -280,7 +292,7 @@ export default function ImgMediaCard() {
           <h2>My Personal Projects</h2>
           <hr></hr>
           <h4>Software Developer @ Queen's Media & Technology</h4>
-       
+
           </div>
       </Popover>
     </div>

@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Yeseva One';
+  src: local('Yeseva One'), url('YesevaOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: local('Avenir'), url('Metropolis-Light.otf') format('opentype');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -23,7 +33,7 @@ h3 {
 }
 
 h2 {
-  font-family: "Avenir Next";
+  font-family: "Avenir";
   color: #519162;
   letter-spacing: .02em;
   font-weight: 400;
@@ -41,7 +51,7 @@ h4 {
 h5{
   color: #7a877a;
   font-family: "Yeseva One";
-  font-size: 100%;
+  font-size: 110%;
   font-weight: 100;
   margin-top: 0%;
   margin-bottom: 0%;
@@ -52,15 +62,18 @@ p{
   margin-top: 0;
 }
 .all {
-  align-items: center;
-  text-align: center;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  align-content: center;
+  margin-top: 10%;
 
 
 }
 .main-div {
   margin-top: 10%;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
 
 }
 
@@ -70,17 +83,17 @@ p{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent; 
+  background: transparent;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #42724e; 
+  background: #42724e;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #243f2b; 
+  background: #243f2b;
 }
 
 hr{
@@ -89,14 +102,18 @@ hr{
 .card-div{
 
   display: inline-flex;
-  padding: 50px;
   text-align: center;
   align-items: center;
 }
 
+.fa-a {
+  padding-right: 10px;
+}
+
 .resume-div {
   display: inline-flex;
-
+  text-align: center;
+  align-items: center;
 }
 
 .popover-class {
@@ -116,15 +133,15 @@ code {
 
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  text-align: center;
-  align-items: center;
+  text-align: left;
+  align-items: left;
   color: #3a3a3a;
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .05em; /* Adjust as needed */
-  width: 50%;
-  animation: 
+  width: 100%;
+  animation:
     typing 1.5s steps(24, end),
     blink-caret .75s step-end infinite;
 }
@@ -132,11 +149,11 @@ code {
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 50% }
+  to { width: 1000 }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  20% { border-color: #3a3a3a; }
+  50% { border-color: #3a3a3a; }
 }
