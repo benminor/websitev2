@@ -6,8 +6,8 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Popover from '@material-ui/core/Popover';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCompressAlt, faHome, faMailBulk, faMobileAlt, faShare, faVoicemail } from "@fortawesome/free-solid-svg-icons";
-import { faAirbnb, faAppStore, fab, faGithub, faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faComment, faCompressAlt, faHome, faMagic, faMailBulk, faMobileAlt, faNotesMedical, faShare, faVoicemail } from "@fortawesome/free-solid-svg-icons";
+import { faAirbnb, faAppStore, fab, faGithub, faGithubSquare, faLinkedin, faMailchimp, faMedium } from '@fortawesome/free-brands-svg-icons';
 
 
 const useStyles = makeStyles({
@@ -56,14 +56,14 @@ const cardStyle2 = {
 
 
 const typoGStyle = {
-  fontFamily: "Yeseva One",
+  fontFamily: "Johnston",
   fontWeight: 300,
   fontSize: "29px",
   color: "white",
 }
 
 const popoverFont2 = {
-  fontFamily: "Yeseva One",
+  fontFamily: "Johnston",
   fontSize: "20px",
   color: "white",
 }
@@ -112,12 +112,14 @@ export default function ImgMediaCard() {
 
 
         <div class="typewriter">
-          <h1>Hi, I'm Ben.</h1>
+          <h1>Hey, I'm Ben.</h1>
         </div>
-        <h2>I'm a 3rd year Computing student at Queen's University.</h2>
-        <a class = "fa-a"><FontAwesomeIcon icon={faGithub} size='lg'/></a>
-        <a class = "fa-a"><FontAwesomeIcon icon={faLinkedin} size='lg'/></a>
-        <a class = "fa-a"><FontAwesomeIcon icon={faAppStore} size='lg'/></a>
+        <h3 class = "second">I build software.</h3>
+        <h2>I'm a 3rd year Computing student at Queen's University. Explore my links below or shoot me an email at <a href="mailto: ben.minor@queensu.ca">ben.minor@queensu.ca</a> to chat :)</h2>
+        <a class = "fa-a"><FontAwesomeIcon icon={faGithub} size='2x' color='#3a3a3a'/></a>
+        <a class = "fa-a"><FontAwesomeIcon icon={faLinkedin} size='2x' color='#3a3a3a'/></a>
+        <a class = "fa-a"><FontAwesomeIcon icon={faMedium} size='2x' color='#3a3a3a'/></a>
+        <a class = "fa-a"><FontAwesomeIcon icon={faAppStore} size='2x' color='#3a3a3a'/></a>
 
 
         <br></br><br></br>
@@ -132,8 +134,15 @@ export default function ImgMediaCard() {
           </Card>
         </div>
         <br></br>
+        <div class = "down-arrow">
+          <p><a href = "#main-area">&#x2193;</a></p>
+        </div>
 
-        <div class = "card-div">
+
+        </div>
+        <div>
+
+        <div class = "card-div" id = "main-area">
 
           <Card className={classes.root} style={cardStyle}>
             <CardActionArea className={classes.secondary} aria-describedby={id} variant="contained" color="primary" onClick={handleClick}>
@@ -161,8 +170,6 @@ export default function ImgMediaCard() {
 
 
         </div>
-      </div>
-      <div>
 
       <Popover
         id={id}

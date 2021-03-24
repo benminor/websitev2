@@ -8,6 +8,10 @@
   src: local('Avenir'), url('Metropolis-Light.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Johnston';
+  src: local('Johnston'), url('johnston-itc-std-bold.otf') format('opentype');
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -22,21 +26,26 @@ body {
 
 h1 {
   font-size: 110px;
-  font-family: "Yeseva One";
+  font-family: "Johnston";
   font-weight: 1000;
 }
 
 h3 {
-  font-family: "Yeseva One";
+  font-family: "Johnston";
   color: white;
   font-size: 40px;
 }
-
+a {
+  color: #243f2b;
+  text-decoration: none;
+}
 h2 {
   font-family: "Avenir";
   color: #519162;
   letter-spacing: .02em;
   font-weight: 400;
+  line-height: 190%;
+  font-size: 18px;
 
 }
 
@@ -50,8 +59,17 @@ h4 {
 
 h5{
   color: #7a877a;
-  font-family: "Yeseva One";
+  font-family: "Johnston";
   font-size: 110%;
+  font-weight: 100;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+h3.second{
+  color: #7a877a;
+  font-family: "Johnston";
+  font-size: 40px;
   font-weight: 100;
   margin-top: 0%;
   margin-bottom: 0%;
@@ -60,9 +78,10 @@ p{
   margin: 0;
   font-family: "Avenir";
   margin-top: 0;
+  line-height: 150%;
 }
 .all {
-  width: 50%;
+  width: 75%;
   height: 100%;
   margin: auto;
   align-content: center;
@@ -71,10 +90,28 @@ p{
 
 }
 .main-div {
-  margin-top: 10%;
+  margin-top: 20%;
+  height: 100%;
+  margin-bottom: 0%;
+
   align-items: left;
   text-align: left;
 
+}
+
+html {
+  scroll-behavior: smooth;
+ }
+
+
+.down-arrow{
+  margin-top: 15%;
+  margin-bottom: 15%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  font-size: 300%;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {
@@ -104,6 +141,7 @@ hr{
   display: inline-flex;
   text-align: center;
   align-items: center;
+  margin-bottom: 60%;
 }
 
 .fa-a {
