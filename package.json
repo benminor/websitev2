@@ -21,7 +21,7 @@
     "react-dom": "^17.0.1",
     "react-native-elements": "^3.3.2",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^4.0.3",
     "react-share-linkedin": "^1.0.0",
     "react-social-badge": "^1.0.6",
     "react-switch": "^6.0.0",
